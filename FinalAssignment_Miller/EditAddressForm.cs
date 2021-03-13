@@ -34,6 +34,10 @@ namespace FinalAssignment_Miller
             {
                 MessageBox.Show("No fields may be empty!");
             }
+            else if (textBox3.Text.Length > 2)
+            {
+                MessageBox.Show("Use state abbreviations please");
+            }
             else
             {
                 Address newAddy = cdc.Addresses.Single(upd => upd.CustomerId == ReadOnlyDataForm.currentID);
